@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Upload Your File</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css_img_gallery/bootstrap.min.css')}}">
+    <!--custom css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css_upload/upload_css.css')}}">
+
+  </head>
+  <body>
+
+    <section>
+      <div class="container p-5">
+        <!-- For demo purpose -->
+        <div class="row mb-5 text-center text-white">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="display-4">File upload</h1>
+          </div>
+        </div>
+        <!-- End -->
+        <h2 style="text-align: center;">Select a file to upload</h2>
+        <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class=flashes>
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        </p>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-lg-5 mx-auto">
+                  <div class="p-5 bg-white shadow rounded-lg"><img src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+                      <dl>
+                        <input type="file" name="file" autocomplete="off" required style="margin-left: 5em;">
+                      </dl>
+
+                      <div class="form-group">
+                        <select class="form-control" name="Branch">
+                          <option selected>BRANCH</option>
+                          <option value="B.Tech">B.Tech</option>
+                          <option value="Diploma">Diploma</option>
+                          <option value="B.sc_agri">B.Sc Agriculture</option>
+                          <option value="bba">BBA</option>
+                          <option value="b.pharma">B.Pharma</option>
+                          <option value="d.pharma">D.Pharma</option>
+                          <option value="m.tech">M.Tech</option>
+                          <option value="events">Events</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <select class="form-control" name="Year">
+                          <option selected>YEAR</option>
+                          <option value="1">First</option>
+                          <option value="2">Second</option>
+                          <option value="3">Third</option>
+                          <option value="4">Fourth</option>
+                          <option value="5">Alumni</option>
+                        </select>
+                      </div>
+                    <!-- End -->
+
+                    <div style="margin-left: 8em;padding: 10px 28px;font-size: 12px;">
+                      <input class="btn btn-outline-dark" type="submit" value="Submit">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        	</p>
+        </form>
+
+
+    </section>
+  </body>
+</html>

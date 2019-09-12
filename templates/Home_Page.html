@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Student-R-Us</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/font-awesome.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/fullpage.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/owl.carousel.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-style.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/responsive.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/card.css')}}">
+
+    </head>
+
+    <body>
+
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="https://www.jbitdoon.com/" id="logo" title="Elegance by TemplateMo">
+                        JB Institue Of Technology
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">About</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">Images</a></li>
+                                    <li data-menuanchor="slide04"><a href="#slide04">Notifications</a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide05">video</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Sign In</a></li>
+                                    <li data-menuanchor="slide07"><a href="#slide07">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="{{url_for('static',filename='images/video-bg.mp4')}}" type="video/mp4">
+        </video>
+
+        <div id="fullpage" class="fullpage-default">
+
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="welcome-box">
+                        <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to</span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp">Student-R-Us!!</h1>
+                        <p class="animate" data-animate="fadeInUp">Basically Straight Up A Sudent Corner!<br> Upload, Download and Share Your Moments!! <br> All Your Visual Media At One Place</p>
+                        <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="{{url_for('static',filename='images/mouse-scroll.png')}}" alt=""><span>Scroll Down</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide02">
+                <div class="section-inner">
+                    <div class="about-section">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 wide-col-laptop">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="about-contentbox">
+                                            <div class="animate" data-animate="fadeInUp">
+                                                <span>About The Site</span>
+                                                <h2>Who It Works?</h2>
+                                                <p>Live In Your World, Share In Ours!! <br> Just Follow The Process and Save your Moments!! <br> Acess Them <strong>Anywhere!! Anytime!!</strong></p>
+                                            </div>
+                                            <div class="facts-list owl-carousel">
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-upload counter-icon" aria-hidden="true"></i><span class="count-number">Upload</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-hashtag counter-icon" aria-hidden="true"></i><span class="count-number">Describe</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-share-alt counter-icon" aria-hidden="true"></i><span class="count-number">Share!!</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-user-plus counter-icon" aria-hidden="true"></i><span class="count-number">Sign Up</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="{{url_for('static',filename='images/profile-girl.jpg')}}" class="rounded" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide03">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+
+                                <h2>IMAGES</h2>
+                            </div>
+                            <div class="services-section">
+                                <div class="services-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div>
+                                          <div class="card">
+                                            <img class="card-img-top img-fluid" class="class-image" src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+                                            <div class="card-body">
+                                              <h4 class="card-title">Card</h4>
+                                              <a href="#" class="btn btn-dark">Download</a>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div>
+                                          <div class="card">
+                                            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1542308744-3ff59556ac64?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+                                            <div class="card-body">
+                                              <h4 class="card-title">Card</h4>
+                                              <a href="#" class="btn btn-dark">Download</a>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1563569612166-d2aaeaaa5294?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                      <div>
+                                        <div class="card">
+                                          <img class="card-img-top img-fluid" src="https://placehold.it/800x600/f44242/fff" alt="Card image cap">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <a href="#" class="btn btn-dark">Download</a>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide04">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+
+                                <h2>Notifications</h2>
+                            </div>
+                            <div class="skills-row animate" data-animate="fadeInDown">
+                              <div class="scrollable">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-8 offset-md-2">
+                                      <div class="card text-center">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Message Title</h5>
+                                          <p class="card-text">message to be conveyed</p>
+                                          <footer class="blockquote-footer">by whom, <cite title="Source Title">branch,year</cite></footer>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                          2 days ago
+                                        </div>
+                                      </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-md-8 offset-md-2">
+                                        <div class="card text-center">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Message Title</h5>
+                                            <p class="card-text">message to be conveyed</p>
+                                            <footer class="blockquote-footer">by whom, <cite title="Source Title">branch,year</cite></footer>
+                                          </div>
+                                          <div class="card-footer text-muted">
+                                            2 days ago
+                                          </div>
+                                        </div>
+                                          </div>
+                                      </div>
+                                      <br>
+                                      <div class="row">
+                                        <div class="col-md-8 offset-md-2">
+                                          <div class="card text-center">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Message Title</h5>
+                                              <p class="card-text">message to be conveyed</p>
+                                              <footer class="blockquote-footer">by whom, <cite title="Source Title">branch,year</cite></footer>
+                                            </div>
+                                            <div class="card-footer text-muted">
+                                              2 days ago
+                                            </div>
+                                          </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                          <div class="col-md-8 offset-md-2">
+                                            <div class="card text-center">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Message Title</h5>
+                                                <p class="card-text">message to be conveyed</p>
+                                                <footer class="blockquote-footer">by whom, <cite title="Source Title">branch,year</cite></footer>
+                                              </div>
+                                              <div class="card-footer text-muted">
+                                                2 days ago
+                                              </div>
+                                            </div>
+                                              </div>
+                                          </div>
+                                          <br>
+                                          <div class="row">
+                                            <div class="col-md-8 offset-md-2">
+                                              <div class="card text-center">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Message Title</h5>
+                                                  <p class="card-text">message to be conveyed</p>
+                                                  <footer class="blockquote-footer">by whom, <cite title="Source Title">branch,year</cite></footer>
+                                                </div>
+                                                <div class="card-footer text-muted">
+                                                  2 days ago
+                                                </div>
+                                              </div>
+                                                </div>
+                                            </div>
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="section animated-row" data-section="slide06">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>VIDEOS</h2>
+                            </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-1.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap CSS templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-2.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap themes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-3.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap layouts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-1.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-2.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download Bootstrap CSS templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-3.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-1.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-2.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{{url_for('static',filename='images/item-3.jpg')}}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>templatemo is the best</h4>
+                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide05">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>SIGN IN</h2>
+                            </div>
+                            <br>
+                            <div data-animate="fadeInUp" style="text-align: center;">
+                              <form class="" action="/std_login" method="post">
+                                <button id="btn" type="submit" class="btn btn-outline-dark btn-lg" aria-pressed="false">STUDENT</button>
+                              </form>
+                            </div>
+                            <br>
+                            <div data-animate="fadeInUp" style="text-align: center;">
+                              <form class="" action="/fac_login" method="post">
+                                <button id="btn1" type="submti" class="btn btn-outline-dark btn-lg" aria-pressed="false">FACULTY</button>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide07">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>SIGN UP!!</h2>
+                            </div>
+                            <div class="contact-section">
+                                <form  action="/signup" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                                          <div class="input-field">
+                                              <input type="text" class="form-control" name="FirstName" id="name" required placeholder="First Name">
+                                          </div>
+                                          <div class="input-field">
+                                              <input type="text" class="form-control" name="LastName" id="name" required placeholder="Last Name">
+                                          </div>
+                                          <div class="input-field">
+                                            <select class="dropdown-item" name="Branch">
+                                              <option value="1">BRANCH</option>
+                                              <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                                              <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                                              <option value="Electrical Engineering">Electrical Engineering</option>
+                                              <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                              <option value="Civil Engineering">Civil Engineering</option>
+                                              <option value="Diploma">Diploma</option>
+                                              <option value="Bsc. Agriculture">Bsc. Agriculture</option>
+
+                                            </select>
+                                          </div>
+                                          <br>
+                                          <br>
+                                          <div class="input-field">
+                                            <select class="dropdown-item" name="Year" size="1">
+                                              <option value="1">YEAR</option>
+                                              <option value="First">First</option>
+                                              <option value="Second">Second</option>
+                                              <option value="Third">Third</option>
+                                              <option value="Fourth">Fourth</option>
+                                              <option value="faculty">faculty</option>
+                                            </select>
+                                          </div>
+                                      </div>
+                                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                                            <div class="input-field">
+                                              <select class="dropdown-item" name="Position" size="1">
+                                                <option value="1">STUDENT OR FACULTY---</option>
+                                                <option value="Student">Student</option>
+                                                <option value="Faculty">Faculty</option>
+
+                                              </select>
+                                            </div>
+                                            <br>
+                                            <div class="input-field">
+                                                <input type="email" class="form-control" name="Email" id="email" required placeholder="Email">
+                                            </div>
+                                            <hr>
+                                            <div class="input-field">
+                                                <input type="password" name="inputPassword" class="form-control" placeholder="Password" required>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="password" name="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+                                            </div>
+                                            <button class="btn" type="submit">Submit</button>
+                                    </div>
+                                  </div>
+                                </form>
+                                <div>
+                      						{% if msg_1 %}
+                      							<p style="color: Red;"> <strong> {{ msg_1}} </strong></p>
+                      						{% endif %}
+                      					</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div id="social-icons">
+            <div class="text-right">
+                <ul class="social-icons">
+                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/fullpage.min.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/scrolloverflow.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/jquery.inview.min.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/form.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+  <!--  <script>
+    function visit_page(){
+        window.location="{{url_for('submit')}}";
+    }
+</script>-->
+
+
+  </body>
+</html>

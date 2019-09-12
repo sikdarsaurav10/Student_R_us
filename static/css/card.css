@@ -1,0 +1,27 @@
+.card{ background-color: rgba(245, 245, 245, 0.4);
+}
+.card-title, .card-text,{ opacity: 10}
+.scrollable {
+        height: 400px;
+        overflow-y: scroll;
+      }
+.jumbotron{
+    margin-right: 20em;
+    margin-left: 20em;
+    align-self: center;
+    margin-top: 15em;
+  }
+
+  input[type=button]{
+  transition-duration: 0.4s;
+  border: 2px solid #4959e5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  }
+  input[type=button]:hover{
+  background-color: #4959e5;/*blue*/
+  color: white;
+  }
