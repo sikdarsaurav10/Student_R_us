@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request,session,url_for,redirect,flash
 import sqlite3
 import os
+import glob
 #import magic
 import urllib.request
 from upload_config import app
@@ -113,117 +114,232 @@ def thirteenth():
 
 @app.route('/image_gallery_10')
 def fourteenth():
-    return render_template('b_tech_1_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.tech/1_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('b_tech_1_img.html',filename=image)
 
 
 @app.route('/image_gallery_11')
 def fifteenth():
-    return render_template('b_tech_2_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.tech/2_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('b_tech_2_img.html', filename=image)
 
 
 @app.route('/image_gallery_12')
 def sixteenth():
-    return render_template('b_tech_3_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.tech/3_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('b_tech_3_img.html', filename=image)
 
 
 @app.route('/image_gallery_13')
 def seventeenth():
-    return render_template('b_tech_4_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.tech/4_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('b_tech_4_img.html', filename=image)
 
 
 @app.route('/image_gallery_14')
 def eighteenth():
-    return render_template('b_tech_alm_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.tech/5_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('b_tech_alm_img.html', filename=image)
 
 
 @app.route('/image_gallery_15')
 def nineteenth():
-    return render_template('bba_1_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/BBA/1_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bba_1_img.html', filename=image)
 
 
 @app.route('/image_gallery_16')
 def twenty():
-    return render_template('bba_2_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/BBA/2_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bba_2_img.html', filename=image)
 
 
 @app.route('/image_gallery_17')
 def twenty_one():
-    return render_template('bba_3_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/BBA/3_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bba_3_img.html', filename=image)
 
 
 @app.route('/image_gallery_18')
 def twenty_two():
-    return render_template('bba_alm_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/BBA/4_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bba_alm_img.html', filename=image)
 
 
 @app.route('/image_gallery_19')
 def twenty_three():
-    return render_template('bp_1_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.pharma/1_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bp_1_img.html', filename=image)
 
 
 @app.route('/image_gallery_20')
 def twenty_four():
-    return render_template('bp_2_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.pharma/2_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bp_2_img.html', filename=image)
 
 
 @app.route('/image_gallery_21')
 def twenty_five():
-    return render_template('bp_3_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.pharma/3_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bp_3_img.html', filename=image)
 
 
 @app.route('/image_gallery_22')
 def twenty_six():
-    return render_template('bp_4_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.pharma/4_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bp_4_img.html', filename=image)
 
 
 @app.route('/image_gallery_23')
 def twenty_seven():
-    return render_template('bp_alm_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.pharma/5_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bp_alm_img.html', filename=image)
 
 
 @app.route('/image_gallery_24')
 def twenty_eight():
-    return render_template('bsc_1_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.sc_Agri/1_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bsc_1_img.html', filename=image)
 
 
 @app.route('/image_gallery_25')
 def twenty_nine():
-    return render_template('bsc_2_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.sc_Agri/2_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bsc_2_img.html', filename=image)
 
 
 @app.route('/image_gallery_26')
 def thirty():
-    return render_template('bsc_3_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.sc_Agri/3_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bsc_3_img.html', filename=image)
 
 
 @app.route('/image_gallery_27')
 def thirty_one():
-    return render_template('bsc_4_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.sc_Agri/4_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bsc_4_img.html', filename=image)
 
 
 @app.route('/image_gallery_28')
 def thirty_two():
-    return render_template('bsc_alm_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/B.sc_Agri/5_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('bsc_alm_img.html', filename=image)
 
 
 @app.route('/image_gallery_29')
 def thirty_three():
-    return render_template('dp_1_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/Diploma/1_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('dp_1_img.html', filename=image)
 
 
 @app.route('/image_gallery_30')
 def thirty_four():
-    return render_template('dp_2_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/Diploma/2_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('dp_2_img.html', filename=image)
 
 
 @app.route('/image_gallery_31')
 def thirty_five():
-    return render_template('dp_3_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/Diploma/3_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('dp_3_img.html', filename=image)
 
 
 @app.route('/image_gallery_32')
 def thirty_six():
-    return render_template('dp_alm_img.html')
+    image = []
+    gallery_image = glob.glob('static/uploads/Diploma/4_yr/*')
+    for i in range(0,len(gallery_image)):
+        image.append(gallery_image[i][15:])
+    print(image)
+    return render_template('dp_alm_img.html', filename=image)
 
 
 @app.route('/image_gallery_33')
@@ -326,78 +442,73 @@ def upload_file():
                 flash('File Successfully Uploaded')
             elif branch == "B.Tech" and year == "5":
                 file.save(os.path.join(app.config['B_Tech_Folder_5'], filename))
-            elif branch == "BBA" and year == "2":
+                flash('File Successfully Uploaded')
+            elif branch == "bba" and year == "1":
                 file.save(os.path.join(app.config['Bba_Tech_Folder_1'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
-            elif branch == "B.Tech" and year == "1":
-                file.save(os.path.join(app.config['B_Tech_Folder'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "bba" and year == "2":
+                file.save(os.path.join(app.config['Bba_Tech_Folder_2'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "bba" and year == "3":
+                file.save(os.path.join(app.config['Bba_Tech_Folder_3'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "bba" and year == "4":
+                file.save(os.path.join(app.config['Bba_Tech_Folder_4'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "Diploma" and year == "1":
+                file.save(os.path.join(app.config['Diploma_Folder_1'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "Diploma" and year == "2":
+                file.save(os.path.join(app.config['Diploma_Folder_2'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "Diploma" and year == "3":
+                file.save(os.path.join(app.config['Diploma_Folder_3'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "Diploma" and year == "4":
+                file.save(os.path.join(app.config['Diploma_Folder_4'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "B.sc_agri" and year == "1":
+                file.save(os.path.join(app.config['Bsc_Folder_1'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "B.sc_agri" and year == "2":
+                file.save(os.path.join(app.config['Bsc_Folder_2'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "B.sc_agri" and year == "3":
+                file.save(os.path.join(app.config['Bsc_Folder_3'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "B.sc_agri" and year == "4":
+                file.save(os.path.join(app.config['Bsc_Folder_4'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "B.sc_agri" and year == "5":
+                file.save(os.path.join(app.config['Bsc_Folder_5'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "b.pharma" and year == "1":
+                file.save(os.path.join(app.config['B_pharma_Folder_1'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "b.pharma" and year == "2":
+                file.save(os.path.join(app.config['B_pharma_Folder_2'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "b.pharma" and year == "3":
+                file.save(os.path.join(app.config['B_pharma_Folder_3'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "b.pharma" and year == "4":
+                file.save(os.path.join(app.config['B_pharma_Folder_4'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "b.pharma" and year == "5":
+                file.save(os.path.join(app.config['B_pharma_Folder_5'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "d.pharma" and year == "1":
+                file.save(os.path.join(app.config['D_pharma_Folder_1'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "d.pharma" and year == "2":
+                file.save(os.path.join(app.config['D_pharma_Folder_2'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "d.pharma" and year == "3":
+                file.save(os.path.join(app.config['D_pharma_Folder_3'], filename))
+                flash('File Successfully Uploaded')
+            elif branch == "d.pharma" and year == "4":
+                file.save(os.path.join(app.config['D_pharma_Folder_4'], filename))
+                flash('File Successfully Uploaded')
             else:
                 flash('Please Select Branch and Year')
 
